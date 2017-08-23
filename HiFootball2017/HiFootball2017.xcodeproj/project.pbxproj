@@ -13,9 +13,11 @@
 		217DBEFB1F4D49A3009FFFFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217DBEF91F4D49A3009FFFFB /* Main.storyboard */; };
 		217DBEFD1F4D49A3009FFFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217DBEFC1F4D49A3009FFFFB /* Assets.xcassets */; };
 		217DBF001F4D49A3009FFFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217DBEFE1F4D49A3009FFFFB /* LaunchScreen.storyboard */; };
+		3226D22C329D497CD2D42ED8 /* libPods-HiFootball2017.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CF69CB2C3682645A45AAF3B /* libPods-HiFootball2017.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C366BE28CB16A119E14D70C /* Pods-HiFootball2017.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFootball2017.release.xcconfig"; path = "Pods/Target Support Files/Pods-HiFootball2017/Pods-HiFootball2017.release.xcconfig"; sourceTree = "<group>"; };
 		217DBEED1F4D49A3009FFFFB /* HiFootball2017.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiFootball2017.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		217DBEF11F4D49A3009FFFFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		217DBEF31F4D49A3009FFFFB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		217DBEFC1F4D49A3009FFFFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		217DBEFF1F4D49A3009FFFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		217DBF011F4D49A3009FFFFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CF69CB2C3682645A45AAF3B /* libPods-HiFootball2017.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiFootball2017.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF4B554669F2792473FF91DF /* Pods-HiFootball2017.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiFootball2017.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HiFootball2017/Pods-HiFootball2017.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3226D22C329D497CD2D42ED8 /* libPods-HiFootball2017.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				217DBEEF1F4D49A3009FFFFB /* HiFootball2017 */,
 				217DBEEE1F4D49A3009FFFFB /* Products */,
+				47342C2681D47CD7EC6DBC5D /* Pods */,
+				AD8D0D59778CEAFD50C0B158 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		47342C2681D47CD7EC6DBC5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF4B554669F2792473FF91DF /* Pods-HiFootball2017.debug.xcconfig */,
+				1C366BE28CB16A119E14D70C /* Pods-HiFootball2017.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD8D0D59778CEAFD50C0B158 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CF69CB2C3682645A45AAF3B /* libPods-HiFootball2017.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 217DBF041F4D49A3009FFFFB /* Build configuration list for PBXNativeTarget "HiFootball2017" */;
 			buildPhases = (
+				A6B60651ABD1A59B6D4E6F71 /* [CP] Check Pods Manifest.lock */,
 				217DBEE91F4D49A3009FFFFB /* Sources */,
 				217DBEEA1F4D49A3009FFFFB /* Frameworks */,
 				217DBEEB1F4D49A3009FFFFB /* Resources */,
+				84DBF5E58D7CB90C7445FB7A /* [CP] Embed Pods Frameworks */,
+				15BC0C0C19139751829693F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15BC0C0C19139751829693F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HiFootball2017/Pods-HiFootball2017-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84DBF5E58D7CB90C7445FB7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HiFootball2017/Pods-HiFootball2017-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B60651ABD1A59B6D4E6F71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HiFootball2017-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		217DBEE91F4D49A3009FFFFB /* Sources */ = {
@@ -260,6 +338,7 @@
 		};
 		217DBF051F4D49A3009FFFFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4B554669F2792473FF91DF /* Pods-HiFootball2017.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HiFootball2017/Info.plist;
@@ -271,6 +350,7 @@
 		};
 		217DBF061F4D49A3009FFFFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C366BE28CB16A119E14D70C /* Pods-HiFootball2017.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HiFootball2017/Info.plist;
